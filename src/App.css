@@ -14,6 +14,55 @@
   padding: 0;
 }
 
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body.issue7 {
+  background: var(--issue-7);
+}
+
+body.issue6 {
+  background: var(--issue-6);
+}
+
+body.issue5 {
+  background: var(--issue-5);
+}
+
+body.issue4 {
+  background: var(--issue-4);
+}
+
+body.issue3 {
+  background: var(--issue-3);
+}
+
+body.issue2 {
+  background: var(--issue-2);
+}
+
+body.issue1 {
+  background: var(--issue-1);
+}
+
+a {
+  color: #251d20;
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+p {
+  color: #251d14;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
+}
+
 .header-logo {
   padding-top: 20px;
   position: absolute;
@@ -23,5 +72,39 @@
   .logo {
     width: 260px;
     height: auto;
+  }
+}
+
+.footer {
+  .description {
+    position: absolute;
+    bottom: 0;
+    left: 22px;
+    width: 320px;
+    margin-top: 0;
+    .copyright {
+      display: block;
+      font-size: 12px;
+      font-weight: normal;
+      .link {
+        text-decoration: underline;
+      }
+    }
+  }
+  .menu {
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
+    width: 200px;
+    text-align: right;
+    z-index: 3;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  .contact {
+    text-align: right;
+    position: absolute;
+    right: 15px;
+    top: 20px;
   }
 }

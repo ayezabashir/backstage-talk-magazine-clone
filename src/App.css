@@ -1,0 +1,15 @@
+:root {
+  --issue-7: #ff608c;
+  --issue-6: #ffffff;
+  --issue-5: #00c1b5;
+  --issue-4: #ff6519;
+  --issue-3: #ffbe00;
+  --issue-2: #1d3fbb;
+  --issue-1: #e30512;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

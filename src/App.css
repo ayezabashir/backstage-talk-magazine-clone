@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap");
+
 :root {
   --issue-7: #ff608c;
   --issue-6: #ffffff;
@@ -12,6 +14,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -89,6 +95,14 @@ p {
       .link {
         text-decoration: underline;
       }
+      .link:hover {
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+    .policy:hover {
+      text-decoration: underline;
+      cursor: pointer;
     }
   }
   .menu {
@@ -106,5 +120,12 @@ p {
     position: absolute;
     right: 15px;
     top: 20px;
+    .mail {
+      font-weight: bold;
+    }
+    .mail:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
   }
 }

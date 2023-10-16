@@ -18,39 +18,13 @@
 
 html {
   font-family: "Roboto", sans-serif;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
 }
 
 body {
   height: 100%;
-  overflow: hidden;
-}
-
-body.issue7 {
-  background: var(--issue-7);
-}
-
-body.issue6 {
-  background: var(--issue-6);
-}
-
-body.issue5 {
-  background: var(--issue-5);
-}
-
-body.issue4 {
-  background: var(--issue-4);
-}
-
-body.issue3 {
-  background: var(--issue-3);
-}
-
-body.issue2 {
-  background: var(--issue-2);
-}
-
-body.issue1 {
-  background: var(--issue-1);
 }
 
 a {
@@ -71,9 +45,8 @@ p {
 
 .header-logo {
   padding-top: 20px;
-  position: absolute;
-  left: 15px;
-  top: 0;
+  position: fixed;
+  padding-left: 20px;
   z-index: 2;
   .logo {
     width: 260px;
@@ -83,7 +56,7 @@ p {
 
 .footer {
   .description {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 22px;
     width: 320px;
@@ -106,7 +79,7 @@ p {
     }
   }
   .menu {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     right: 15px;
     width: 200px;
@@ -114,10 +87,13 @@ p {
     z-index: 3;
     font-size: 18px;
     line-height: 1.6;
+    .menulink:hover {
+      text-decoration: underline;
+    }
   }
   .contact {
     text-align: right;
-    position: absolute;
+    position: fixed;
     right: 15px;
     top: 20px;
     .mail {
@@ -126,6 +102,27 @@ p {
     .mail:hover {
       cursor: pointer;
       text-decoration: underline;
+    }
+  }
+}
+
+.issues {
+  text-align: center;
+  max-height: 100vh;
+  overflow-y: scroll;
+  .issue {
+    height: 100vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+    .issue-info {
+      .issue-cover {
+        height: 75vh;
+        .img {
+          width: auto;
+          height: 100%;
+        }
+      }
     }
   }
 }

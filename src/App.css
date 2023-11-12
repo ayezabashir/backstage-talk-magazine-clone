@@ -126,3 +126,21 @@ p {
     }
   }
 }
+
+@media screen and (max-width: 1002px) {
+  .footer {
+    .description {
+      position: static;
+      margin-bottom: 20px;
+      margin-left: 15px;
+    }
+    .menu {
+      display: none;
+    }
+    .contact {
+      position: static;
+      margin-bottom: 20px;
+      margin-right: 15px;
+    }
+  }
+}

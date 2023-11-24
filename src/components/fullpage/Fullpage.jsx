@@ -5,6 +5,8 @@ import issue4 from '/cover_issue/backstagetalks_cover_issue_4.png'
 import issue3 from '/cover_issue/backstagetalks_cover_issue_3.png'
 import issue2 from '/cover_issue/backstagetalks_cover_issue_2.png'
 import issue1 from '/cover_issue/backstagetalks_cover_issue_1.png'
+import Header from '../header/Header'
+import Footer from '../footer/Footer'
 
 const issueData = [
     {
@@ -13,13 +15,11 @@ const issueData = [
         issuenum: 7,
         buy1: '(Europe)',
         buy2: '(UK & Overseas)',
-        color: '#ff608c'
     },
     {
         id: 1,
         cover: issue6,
         issuenum: 6,
-        color: '#ffffff'
     },
     {
         id: 2,
@@ -41,13 +41,11 @@ const issueData = [
         issuenum: 3,
         buy1: '(Europe)',
         buy2: '(UK & Overseas)',
-        color: '#ffbe00'
     },
     {
         id: 5,
         cover: issue2,
         issuenum: 2,
-        color: '#1d3fbb'
     },
     {
         id: 6,
@@ -55,26 +53,14 @@ const issueData = [
         issuenum: 1,
         buy1: '(Europe)',
         buy2: '(UK & Overseas)',
-        color: '#e30512'
     },
 
 ]
 
 const Fullpage = () => {
-    let issue = document.querySelectorAll('.issue');
-
-    window.addEventListener('scroll', () => {
-        issue.forEach(box => {
-            if (
-                box.getBoundingClientRect().top <= document.body.scrollTop
-            ) {
-                document.body.style.backgroundColor = box.dataset.color;
-                console.log(box.dataset.color)
-            }
-        });
-    });
     return (
         <>
+            <Header />
             <div className="issues" id='fullpage'>
                 {
                     issueData.map(item => (
@@ -96,6 +82,7 @@ const Fullpage = () => {
                     ))
                 }
             </div>
+            <Footer />
         </>
     )
 }

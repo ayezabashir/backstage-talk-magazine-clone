@@ -110,6 +110,7 @@ p {
   text-align: center;
   max-height: 100vh;
   overflow-y: scroll;
+  scroll-snap-type: y mandatory;
   .issue {
     height: 100vh;
     scroll-snap-align: start;

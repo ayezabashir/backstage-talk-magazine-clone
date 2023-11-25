@@ -57,7 +57,7 @@ p {
 .footer {
   .description {
     position: fixed;
-    bottom: 0;
+    bottom: 10px;
     left: 22px;
     width: 320px;
     margin-top: 0;
@@ -80,7 +80,7 @@ p {
   }
   .menu {
     position: fixed;
-    bottom: 0px;
+    bottom: 10px;
     right: 15px;
     width: 200px;
     text-align: right;
@@ -109,7 +109,7 @@ p {
 .issues {
   text-align: center;
   .issue {
-    height: 130vh;
+    height: 120vh;
     text-align: center;
     position: relative;
     .issue-info {
@@ -138,6 +138,17 @@ p {
       position: static;
       margin-bottom: 20px;
       margin-right: 15px;
+    }
+  }
+  .issues {
+    .issue {
+      height: 100vh;
+      .issue-info {
+        .issue-cover {
+          padding-top: 4rem;
+          height: 80vh;
+        }
+      }
     }
   }
 }

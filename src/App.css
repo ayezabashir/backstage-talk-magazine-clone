@@ -108,15 +108,13 @@ p {
 
 .issues {
   text-align: center;
-  scroll-snap-type: y mandatory;
   .issue {
-    height: 100vh;
-    scroll-snap-align: start;
+    height: 130vh;
     text-align: center;
     position: relative;
     .issue-info {
       .issue-cover {
-        height: 75vh;
+        height: 100vh;
         .img {
           width: auto;
           height: 100%;

@@ -67,7 +67,6 @@ const Fullpage = () => {
         const scrollFunction = () => {
             const scrollTop = window.scrollY;
             const windowHeight = window.innerHeight;
-            console.log('hi')
 
             // Calculate the positions of each issue
             const issuePositions = issueData.map(item => {
@@ -77,7 +76,7 @@ const Fullpage = () => {
                 const bottom = rect.bottom + scrollTop;
                 return { top, bottom, color: item.color };
             });
-            console.log('issuePositions:', issuePositions);
+            // console.log('issuePositions:', issuePositions);
 
             // Check which issue is currently in view
             let currentIssue = null;
@@ -89,7 +88,7 @@ const Fullpage = () => {
             }
             if (currentIssue) {
                 document.body.style.background = currentIssue.color;
-                document.body.style.transition = '0.5s background ease-in';
+                document.body.style.transition = '0.4s background ease-in';
             }
 
         };

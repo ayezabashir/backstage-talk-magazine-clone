@@ -117,7 +117,7 @@ const Fullpage = () => {
                                     <img className='img' src={item.cover} alt={item.issuenum} />
                                 </div>
                                 <div className="issue-desc">
-                                    <p>Issue #{item.issuenum}</p>
+                                    <p className='issue-num'>Issue #{item.issuenum}</p>
                                     <p style={item.id === 1 ? { color: '#ff608c' } : { color: '#fff' }}>BUY HERE <span style={{ color: '#251d20' }}>{item.buy1}</span></p>
                                     {
                                         item.buy2 ? <p>BUY HERE {item.buy2}</p> : ''

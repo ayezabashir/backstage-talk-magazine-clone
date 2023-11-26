@@ -46,7 +46,7 @@ p {
 .header-logo {
   padding-top: 20px;
   position: fixed;
-  padding-left: 20px;
+  padding-left: 2rem;
   z-index: 2;
   .logo {
     width: 260px;
@@ -114,6 +114,7 @@ p {
     position: relative;
     .issue-info {
       .issue-cover {
+        padding-top: 2rem;
         height: 100vh;
         .img {
           width: auto;
@@ -124,19 +125,25 @@ p {
   }
 }
 
-@media screen and (max-width: 1002px) {
+@media screen and (max-width: 1028px) {
+  .header-logo {
+    position: static;
+  }
   .footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
     .description {
       position: static;
-      margin-bottom: 20px;
-      margin-left: 15px;
+      padding-left: 2rem;
+      padding-bottom: 2rem;
     }
     .menu {
       display: none;
     }
     .contact {
       position: static;
-      margin-bottom: 20px;
+      padding-bottom: 2rem;
       margin-right: 15px;
     }
   }
@@ -145,7 +152,7 @@ p {
       height: 100vh;
       .issue-info {
         .issue-cover {
-          padding-top: 4rem;
+          padding-top: 0;
           height: 80vh;
         }
       }

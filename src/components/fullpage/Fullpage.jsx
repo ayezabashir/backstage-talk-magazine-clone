@@ -63,6 +63,7 @@ const issueData = [
 ]
 
 const Fullpage = () => {
+    document.body.style.background = '#ff608c';
     useEffect(() => {
         const scrollFunction = () => {
             const scrollTop = window.scrollY;
